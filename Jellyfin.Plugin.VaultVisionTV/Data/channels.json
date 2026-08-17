@@ -1,0 +1,1405 @@
+[
+  {
+    "number": 3,
+    "name": "KIDS & LEARNING",
+    "kind": "curated",
+    "tagline": "Homework help, sort of.",
+    "daypart": [],
+    "fallbackPool": [
+      "BillNye",
+      "AdventuresinWonderland",
+      "GummiBears",
+      "BerenstainBears",
+      "Ghostwriter",
+      "SchoolhouseRock",
+      "LittleBear",
+      "CliffordtheBigRedDogSeriesSeries",
+      "Zoboomafoo",
+      "BertandErniesGreatAdventures",
+      "RoundtheTwist",
+      "AllegrasWindow",
+      "Wishbone",
+      "MouseFactory",
+      "MrMen",
+      "JimHensonHour",
+      "CosmosaPersonalVoyage",
+      "PlanetEarth",
+      "WonderPetsEpisodeswithMissingEpisodes",
+      "MartyStouffersWildAmerica",
+      "WhereInTheWorldIsCarmenSandiego"
+    ]
+  },
+  {
+    "number": 4,
+    "name": "ABC PRIMETIME",
+    "kind": "curated",
+    "tagline": "Thank goodness it's Friday.",
+    "daypart": [
+      {
+        "days": [
+          5
+        ],
+        "startHour": 20,
+        "endHour": 22,
+        "pool": [
+          "TGIF",
+          "FamilyMatters",
+          "GrowingPains",
+          "JusttheTenofUs",
+          "StepByStep"
+        ]
+      }
+    ],
+    "fallbackPool": [
+      "DrewCareyShow",
+      "HomeImprovement",
+      "Coach",
+      "Taxi1978",
+      "McHalesNavySeries",
+      "DharmaAndGreg",
+      "JeffFoxworthyShow",
+      "BosomBuddies",
+      "SoulMan",
+      "TeenAngel",
+      "CavemenSeriesSlightlyBetterQuality",
+      "YouWish"
+    ]
+  },
+  {
+    "number": 5,
+    "name": "ABC DRAMA",
+    "kind": "curated",
+    "tagline": "Alphabet network, after dark.",
+    "daypart": [
+      {
+        "days": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "startHour": 0,
+        "endHour": 5,
+        "ordered": true,
+        "pool": [
+          "DarkShadowsTheSeries"
+        ]
+      }
+    ],
+    "fallbackPool": [
+      "NYPDBlue",
+      "WonderYears",
+      "DoogieHowserMD",
+      "LifeGoesOn",
+      "TwinPeaks",
+      "BattlestarGalactica",
+      "Rookies",
+      "MaxHeadroom",
+      "BarbaryCoast",
+      "LifeAsWeKnowIt",
+      "Automan",
+      "666ParkAvenueSeries",
+      "CopRock",
+      "BlueThunder"
+    ]
+  },
+  {
+    "number": 6,
+    "name": "CBS CLASSICS",
+    "kind": "curated",
+    "tagline": "The eye has a long memory.",
+    "daypart": [],
+    "fallbackPool": [
+      "MASH",
+      "Jeffersons",
+      "LeaveIttoBeavertheSeries",
+      "PetticoatJunction",
+      "Newhart",
+      "GreenAcres",
+      "MaryTylerMooreShow",
+      "DickVanDyke",
+      "TheLucyShow",
+      "HeresLucy",
+      "MisterEd",
+      "ArchieBunkersPlace",
+      "WkrpinCincinnati",
+      "AllInTheFamily"
+    ]
+  },
+  {
+    "number": 7,
+    "name": "CBS PRIMETIME",
+    "kind": "curated",
+    "tagline": "Tiffany network, prime hours.",
+    "daypart": [],
+    "fallbackPool": [
+      "MurphyBrown",
+      "EverybodyLovesRaymond",
+      "KingofQueens",
+      "Nanny",
+      "StillStanding",
+      "BlessThisHouse"
+    ]
+  },
+  {
+    "number": 8,
+    "name": "CBS DRAMA",
+    "kind": "curated",
+    "tagline": "An hour at a time.",
+    "daypart": [],
+    "fallbackPool": [
+      "NorthernExposure",
+      "DueSouth",
+      "Jericho",
+      "BrooklynSouth",
+      "LogansRun",
+      "DallastheSeries",
+      "MurderSheWrote"
+    ]
+  },
+  {
+    "number": 9,
+    "name": "NBC CLASSIC",
+    "kind": "curated",
+    "tagline": "Peacock, full plumage.",
+    "daypart": [
+      {
+        "days": [
+          6
+        ],
+        "startHour": 22,
+        "endHour": 24,
+        "pool": [
+          "SaturdayNightLive"
+        ]
+      },
+      {
+        "days": [
+          0
+        ],
+        "startHour": 0,
+        "endHour": 2,
+        "pool": [
+          "SaturdayNightLive"
+        ]
+      }
+    ],
+    "fallbackPool": [
+      "SavedByTheBell",
+      "CosbyShow",
+      "FactsofLife",
+      "NightCourt",
+      "GetSmart",
+      "MamasFamily",
+      "TheHoganFamily",
+      "ALFtheSeries",
+      "PunkyBrewster",
+      "TheMonkees",
+      "EerieIndiana",
+      "ItsYourMove"
+    ]
+  },
+  {
+    "number": 10,
+    "name": "NBC MUST SEE",
+    "kind": "curated",
+    "tagline": "Thursday, all week long.",
+    "daypart": [],
+    "fallbackPool": [
+      "MadAboutYou",
+      "NewsRadio",
+      "CarolineInTheCity",
+      "VeronicasCloset",
+      "Joey",
+      "Wings",
+      "WeberShow",
+      "Tucker",
+      "WillAndGrace"
+    ]
+  },
+  {
+    "number": 11,
+    "name": "NBC ACTION",
+    "kind": "curated",
+    "tagline": "A plan comes together hourly.",
+    "daypart": [],
+    "fallbackPool": [
+      "ATeam",
+      "HighwayToHeaven",
+      "KnightRider",
+      "Baywatch",
+      "BuckRogers",
+      "V1983",
+      "Chase",
+      "QuantumLeap"
+    ]
+  },
+  {
+    "number": 12,
+    "name": "FOX FUNNY",
+    "kind": "curated",
+    "tagline": "The fourth network laughs last.",
+    "daypart": [],
+    "fallbackPool": [
+      "MADtv",
+      "MalcolmInTheMiddle",
+      "InLivingColor",
+      "ParkerLewis",
+      "NedAndStacey",
+      "PJs",
+      "MarriedWithChildren",
+      "BernieMacShow",
+      "Simpsons",
+      "BacktoYou",
+      "BakersfieldPD",
+      "Action",
+      "Mulaney",
+      "BenStillerShow",
+      "Woops",
+      "Tick",
+      "That70sShow"
+    ]
+  },
+  {
+    "number": 13,
+    "name": "FOX DRAMA",
+    "kind": "curated",
+    "tagline": "Cancelled too soon, airing forever.",
+    "daypart": [],
+    "fallbackPool": [
+      "PartyOfFive",
+      "TheOC",
+      "Millennium",
+      "BriscoCountyJr",
+      "LoneGunmen",
+      "FireflySeries"
+    ]
+  },
+  {
+    "number": 14,
+    "name": "FOX KIDS",
+    "kind": "curated",
+    "tagline": "Weekday afternoons, permanently.",
+    "daypart": [
+      {
+        "days": [
+          6
+        ],
+        "startHour": 8,
+        "endHour": 12,
+        "pool": [
+          "FoxKids",
+          "PowerRangers",
+          "BatmanTAS",
+          "XMen",
+          "SpiderManTAS"
+        ]
+      }
+    ],
+    "fallbackPool": [
+      "Digimon",
+      "Animaniacs",
+      "BobbysWorld",
+      "TheTick",
+      "Godzilla",
+      "TMNTNextMutation",
+      "Goosebumps"
+    ]
+  },
+  {
+    "number": 15,
+    "name": "THE LEARNING CHANNEL",
+    "kind": "curated",
+    "tagline": "Edutainment, on a schedule.",
+    "daypart": [],
+    "fallbackPool": [
+      "BillNye",
+      "SchoolhouseRock",
+      "CosmosaPersonalVoyage",
+      "PlanetEarth",
+      "MartyStouffersWildAmerica",
+      "WhereInTheWorldIsCarmenSandiego"
+    ]
+  },
+  {
+    "number": 16,
+    "name": "NICKELODEON",
+    "kind": "curated",
+    "tagline": "Slime not included.",
+    "daypart": [
+      {
+        "days": [
+          6
+        ],
+        "startHour": 20,
+        "endHour": 22,
+        "pool": [
+          "SNICK"
+        ]
+      },
+      {
+        "days": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "startHour": 23,
+        "endHour": 24,
+        "pool": [
+          "LeaveIttoBeavertheSeries",
+          "PetticoatJunction",
+          "GreenAcres",
+          "MaryTylerMooreShow",
+          "DickVanDyke",
+          "TheLucyShow",
+          "HeresLucy",
+          "MisterEd",
+          "GetSmart",
+          "Taxi1978",
+          "Newhart",
+          "TheMonkees",
+          "BosomBuddies"
+        ]
+      },
+      {
+        "days": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "startHour": 0,
+        "endHour": 5,
+        "pool": [
+          "NickAtNite",
+          "LeaveIttoBeavertheSeries",
+          "PetticoatJunction",
+          "GreenAcres",
+          "MaryTylerMooreShow",
+          "DickVanDyke",
+          "TheLucyShow",
+          "HeresLucy",
+          "MisterEd",
+          "GetSmart",
+          "Taxi1978",
+          "Newhart",
+          "TheMonkees",
+          "BosomBuddies"
+        ]
+      }
+    ],
+    "fallbackPool": [
+      "SpongeBobSquarePants",
+      "FairlyOddParents",
+      "GUTS",
+      "AreYouAfraidOfTheDark",
+      "AlexMack",
+      "NickArcade",
+      "HeyDude",
+      "InvaderZIM",
+      "KaBlam",
+      "RenAndStimpy",
+      "RockosModernLife",
+      "SaluteYourShorts",
+      "Animorphs"
+    ]
+  },
+  {
+    "number": 17,
+    "name": "SATURDAY MORNING",
+    "kind": "curated",
+    "tagline": "Eat your cereal.",
+    "daypart": [
+      {
+        "days": [
+          6
+        ],
+        "startHour": 8,
+        "endHour": 12,
+        "pool": [
+          "SatMorning"
+        ]
+      }
+    ],
+    "fallbackPool": [
+      "GarfieldandFriendsSeries",
+      "RockyandBullwinkleShow",
+      "Recess",
+      "AlvinandtheChipmunks",
+      "MuppetBabies",
+      "Animaniacs",
+      "Beetlejuice",
+      "PeabodysImprobableHistory",
+      "BobbysWorld",
+      "TheMaskAnimatedSeries",
+      "Histeria",
+      "AceVenturaPetDetectiveSeries",
+      "WackyRacesSeries",
+      "MotormouseandAutocat",
+      "CaptainN",
+      "CampCandy",
+      "SonictheHedgehog",
+      "LandOfTheLost1991",
+      "MightyMousetheNewAdventures",
+      "CattanoogaCatstheSeries",
+      "JosieandthePussycatsTVseries",
+      "PolePosition",
+      "GarbagePailKids",
+      "KarateKid",
+      "Houndcats",
+      "CaliforniaDreams",
+      "TheJetsons"
+    ]
+  },
+  {
+    "number": 18,
+    "name": "CARTOON CARTOONS",
+    "kind": "curated",
+    "tagline": "Basic cable, drawn by hand.",
+    "daypart": [],
+    "fallbackPool": [
+      "PowerpuffGirls",
+      "CampLakebottom",
+      "DuckDodgers",
+      "DextersLaboratorytheSeries",
+      "EdEddNEddySeriesAllEpisodesandSpecials",
+      "CaspersScareSchool",
+      "CouragetheCowardlyDog",
+      "ArchiesWeirdMysteries",
+      "GravityFalls",
+      "LandBeforeTime",
+      "MorphFiles",
+      "SwanBoy"
+    ]
+  },
+  {
+    "number": 19,
+    "name": "TOON AFTERNOON",
+    "kind": "curated",
+    "tagline": "Straight from the syndication truck.",
+    "daypart": [],
+    "fallbackPool": [
+      "TeenageMutantNinjaTurtles",
+      "CaptainPlanet",
+      "TinyToonAdventures",
+      "DarkwingDucktheSeries",
+      "HeathcliffandtheCatillacCatsTVSeries",
+      "InspectorGadget",
+      "DuckTalesSeriesWorkinProgress",
+      "MutantLeague",
+      "AdventuresOfSonic",
+      "BikerMiceFromMars",
+      "RamboTheForceofFreedom",
+      "EagleRiders",
+      "BuzzLightyearofStarCommand",
+      "BeastWarsTransformers",
+      "LippytheLionandHardyHarHar",
+      "WallyGator",
+      "MightyMax",
+      "PoliceAcademyTheAnimatedSeries",
+      "StarcomtheUSSpaceForceSeries",
+      "TheJetsons"
+    ]
+  },
+  {
+    "number": 20,
+    "name": "SECTOR 7",
+    "kind": "curated",
+    "tagline": "Warp factor rerun.",
+    "daypart": [
+      {
+        "days": [
+          6
+        ],
+        "startHour": 20,
+        "endHour": 24,
+        "pool": [
+          "SciFiAnime"
+        ]
+      }
+    ],
+    "fallbackPool": [
+      "DoctorWho",
+      "StarTrekTNG",
+      "StarTrekDS9",
+      "StarTrekVoyager",
+      "GeneRoddenberrysAndromeda",
+      "Xena",
+      "Space1999",
+      "TekWar",
+      "RoboCopliveactionTVseries",
+      "JackofAllTradesTVseries",
+      "MortalKombatConquest",
+      "HitchhikersGuidetotheGalaxy",
+      "BattlestarGalactica2004"
+    ]
+  },
+  {
+    "number": 21,
+    "name": "ANTHOLOGY",
+    "kind": "curated",
+    "tagline": "A different story every week.",
+    "daypart": [],
+    "fallbackPool": [
+      "AlfredHitchcockPresents",
+      "TwilightZone1959",
+      "AreYouAfraidOfTheDark",
+      "NewAlfredHitchcockPresents",
+      "AmazingStories",
+      "NightGallery"
+    ]
+  },
+  {
+    "number": 22,
+    "name": "ADVENTURE NETWORK",
+    "kind": "curated",
+    "tagline": "Car chases guaranteed.",
+    "daypart": [],
+    "fallbackPool": [
+      "NYPDBlue",
+      "PartyOfFive",
+      "WonderYears",
+      "ATeam",
+      "HighwayToHeaven",
+      "NorthernExposure",
+      "SwitchedatBirth",
+      "DoogieHowserMD",
+      "TheOC",
+      "Everwood",
+      "KnightRider",
+      "Baywatch",
+      "DueSouth",
+      "CharmedtheSeries",
+      "BuckRogers",
+      "IntotheBadlands",
+      "TwinPeaks",
+      "Jericho",
+      "BriscoCountyJr",
+      "Animorphs",
+      "BattlestarGalactica",
+      "BattlestarGalactica2004",
+      "Persuaders",
+      "Rookies",
+      "V1983",
+      "BrooklynSouth",
+      "TheNetAmericanTVseries",
+      "Chase",
+      "LoneGunmen",
+      "BarbaryCoast",
+      "FireflySeries",
+      "LogansRun",
+      "MaxHeadroom",
+      "Automan",
+      "DallastheSeries",
+      "HandmaidsTaleSeries",
+      "LifeAsWeKnowIt",
+      "Middleman",
+      "BlueThunder",
+      "CopRock",
+      "Tick",
+      "QuantumLeap",
+      "BuffyTheVampireSlayer"
+    ]
+  },
+  {
+    "number": 23,
+    "name": "ANIME ZONE",
+    "kind": "genre",
+    "genre": "Anime",
+    "tagline": "Dubbed, subbed, and everything between."
+  },
+  {
+    "number": 24,
+    "name": "LAUGH TRACK",
+    "kind": "genre",
+    "genre": "Sketch Comedy & Late Night",
+    "tagline": "Live from a soundstage somewhere."
+  },
+  {
+    "number": 26,
+    "name": "REALITY CHECK",
+    "kind": "genre",
+    "genre": "Reality TV",
+    "tagline": "Unscripted. Mostly."
+  },
+  {
+    "number": 27,
+    "name": "CHILLER",
+    "kind": "curated",
+    "tagline": "Leave a light on.",
+    "daypart": [
+      {
+        "days": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "startHour": 20,
+        "endHour": 24,
+        "pool": [
+          "MonsterVision"
+        ]
+      }
+    ],
+    "fallbackPool": [
+      "Millennium",
+      "BeyondReality",
+      "FreddysNightmares",
+      "SapphireandSteel",
+      "AshvsEvilDead",
+      "AmericanGothic1995",
+      "Spooksville",
+      "HammerHouseofHorror"
+    ]
+  },
+  {
+    "number": 28,
+    "name": "QUEENS & RAYMOND",
+    "kind": "curated",
+    "tagline": "Married, with in-laws.",
+    "daypart": [],
+    "fallbackPool": [
+      "EverybodyLovesRaymond",
+      "KingofQueens",
+      "Reba"
+    ]
+  },
+  {
+    "number": 29,
+    "name": "LATE SHOW",
+    "kind": "curated",
+    "tagline": "Past your bedtime.",
+    "daypart": [],
+    "fallbackPool": [
+      "MADtv",
+      "MASH",
+      "MurphyBrown",
+      "NightCourt",
+      "ConanOBrien",
+      "Taxi1978",
+      "WkrpinCincinnati",
+      "InsomniacwithDaveAttell",
+      "MarriedWithChildren"
+    ]
+  },
+  {
+    "number": 30,
+    "name": "MIDNIGHT PRECINCT",
+    "kind": "curated",
+    "tagline": "The city that never reruns.",
+    "daypart": [],
+    "fallbackPool": [
+      "NYPDBlue",
+      "NorthernExposure",
+      "TwinPeaks",
+      "Rookies",
+      "BrooklynSouth",
+      "Chase",
+      "DallastheSeries",
+      "CopRock"
+    ]
+  },
+  {
+    "number": 31,
+    "name": "NIGHTMARE ALLEY",
+    "kind": "curated",
+    "tagline": "Stephen King, wall to wall.",
+    "daypart": [],
+    "fallbackPool": [
+      "AlfredHitchcockPresents",
+      "TwilightZone1959",
+      "TheShining1997",
+      "Tommyknockers",
+      "It1990",
+      "StormOfTheCentury",
+      "TheStand1994",
+      "SometimesTheyComeBack",
+      "Langoliers"
+    ]
+  },
+  {
+    "number": 32,
+    "name": "TWILIGHT HOUR",
+    "kind": "curated",
+    "tagline": "Expect the unexpected, on schedule.",
+    "daypart": [],
+    "fallbackPool": [
+      "DarkShadowsTheSeries",
+      "AlfredHitchcockPresents",
+      "TwilightZone1959",
+      "NewAlfredHitchcockPresents",
+      "Millennium",
+      "AmazingStories",
+      "FreddysNightmares",
+      "SapphireandSteel",
+      "AshvsEvilDead",
+      "AmericanGothic1995",
+      "HammerHouseofHorror",
+      "666ParkAvenueSeries",
+      "BuffyTheVampireSlayer",
+      "NightGallery"
+    ]
+  },
+  {
+    "number": 33,
+    "name": "EERIE AFTER SCHOOL",
+    "kind": "curated",
+    "tagline": "Scary, but you'll still make curfew.",
+    "daypart": [],
+    "fallbackPool": [
+      "AreYouAfraidOfTheDark",
+      "CaspersScareSchool",
+      "CaspertheFriendlyGhost",
+      "BeyondReality",
+      "Spooksville",
+      "EerieIndiana",
+      "Goosebumps"
+    ]
+  },
+  {
+    "number": 34,
+    "name": "GUNDAM & GIANT ROBOTS",
+    "kind": "curated",
+    "tagline": "Giant robots, on the hour.",
+    "daypart": [],
+    "fallbackPool": [
+      "UltimateMuscleSeries",
+      "BeastWarsTransformers",
+      "MobileSuitGundamWing",
+      "MobileSuitGundamSEED",
+      "MobileSuitGundam00",
+      "MobileSuitGundam0083",
+      "MobileSuitGundam08thMSTeam",
+      "MobileSuitGundamMovies"
+    ]
+  },
+  {
+    "number": 35,
+    "name": "DBZ MARATHON",
+    "kind": "curated",
+    "tagline": "It's over 9000 reruns.",
+    "daypart": [],
+    "fallbackPool": [
+      "DragonBallZ",
+      "DragonBall",
+      "DragonBallSuper",
+      "DragonBallZKai",
+      "DragonBallGT",
+      "DragonBallZMovies"
+    ]
+  },
+  {
+    "number": 36,
+    "name": "POKEMON ISLAND",
+    "kind": "curated",
+    "tagline": "Gotta watch 'em all.",
+    "daypart": [],
+    "fallbackPool": [
+      "Digimon",
+      "PokemonIndigoLeague",
+      "MonsterRancher",
+      "PokemonOrangeIslands",
+      "PokmonChronicles"
+    ]
+  },
+  {
+    "number": 37,
+    "name": "SUNDAY FUNNIES",
+    "kind": "curated",
+    "tagline": "Ink, paint, and nothing after 1979.",
+    "daypart": [],
+    "fallbackPool": [
+      "PopeyetheSailorMan",
+      "RockyandBullwinkleShow",
+      "LOONEYTUNESSERIES",
+      "PeabodysImprobableHistory",
+      "LippytheLionandHardyHarHar",
+      "WallyGator",
+      "CaspertheFriendlyGhost",
+      "MotormouseandAutocat",
+      "WackyRacesSeries",
+      "HermanandKatnip",
+      "CelebritysComicolor",
+      "CattanoogaCatstheSeries",
+      "JosieandthePussycatsTVseries",
+      "Houndcats"
+    ]
+  },
+  {
+    "number": 38,
+    "name": "PRIME TIME SOAPS",
+    "kind": "curated",
+    "tagline": "Big hair, bigger drama.",
+    "daypart": [],
+    "fallbackPool": [
+      "PartyOfFive",
+      "NorthernExposure",
+      "TheOC",
+      "Everwood",
+      "TwinPeaks",
+      "DallastheSeries"
+    ]
+  },
+  {
+    "number": 39,
+    "name": "WILD WEST & SWORDPLAY",
+    "kind": "curated",
+    "tagline": "Duels, both sword and six-shooter.",
+    "daypart": [],
+    "fallbackPool": [
+      "Xena",
+      "BriscoCountyJr",
+      "JackofAllTradesTVseries",
+      "BarbaryCoast"
+    ]
+  },
+  {
+    "number": 40,
+    "name": "BAYWATCH NIGHTS",
+    "kind": "curated",
+    "tagline": "Slow motion, fast cars.",
+    "daypart": [],
+    "fallbackPool": [
+      "ATeam",
+      "KnightRider",
+      "Baywatch",
+      "Automan",
+      "BlueThunder"
+    ]
+  },
+  {
+    "number": 41,
+    "name": "MTV",
+    "kind": "curated",
+    "tagline": "I want my MTV.",
+    "daypart": [
+      {
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "startHour": 16,
+        "endHour": 17,
+        "pool": [
+          "MtvTrl"
+        ]
+      }
+    ],
+    "fallbackPool": [
+      "RealWorld",
+      "RoadRules",
+      "Challenge",
+      "Osbournes",
+      "VivaLaBam",
+      "PimpMyRide",
+      "MtvTrueLife",
+      "MTVUnplugged",
+      "BeavisButthead",
+      "Daria",
+      "AeonFlux",
+      "Jackass",
+      "CelebrityDeathmatch"
+    ]
+  },
+  {
+    "number": 42,
+    "name": "THE WONDER HOUR",
+    "kind": "curated",
+    "tagline": "Growing up, one rerun at a time.",
+    "daypart": [],
+    "fallbackPool": [
+      "MalcolmInTheMiddle",
+      "WonderYears",
+      "DoogieHowserMD",
+      "ParkerLewis"
+    ]
+  },
+  {
+    "number": 43,
+    "name": "TRUE CRIME TONIGHT",
+    "kind": "curated",
+    "tagline": "Real cops, real stunts, real reruns.",
+    "daypart": [],
+    "fallbackPool": [
+      "NYPDBlue",
+      "WorldsWildestPoliceVideos",
+      "MostExtremeEliminationChallenge",
+      "BeyondScaredStraight2",
+      "Rookies",
+      "Chase",
+      "LivePD",
+      "JuryDutySeries"
+    ]
+  },
+  {
+    "number": 44,
+    "name": "STAND-UP & SLAPSTICK",
+    "kind": "curated",
+    "tagline": "Comedy that might need stitches.",
+    "daypart": [],
+    "fallbackPool": [
+      "CelebrityDeathmatch",
+      "WhitestKidsUKnow",
+      "InsomniacwithDaveAttell",
+      "Jackass"
+    ]
+  },
+  {
+    "number": 45,
+    "name": "TEEN ACTION THEATER",
+    "kind": "curated",
+    "tagline": "Capes, transformations, and turtle power.",
+    "daypart": [],
+    "fallbackPool": [
+      "TeenageMutantNinjaTurtles",
+      "CaptainPlanet",
+      "BatmanTAS",
+      "XMen",
+      "TeenTitansSeries",
+      "MutantLeague",
+      "SpiderManTAS",
+      "BikerMiceFromMars",
+      "EagleRiders",
+      "RamboTheForceofFreedom",
+      "TransformersPrime",
+      "InvaderZIM",
+      "BatmanBeyond",
+      "TheMaskAnimatedSeries",
+      "BeastWarsTransformers",
+      "MightyMax",
+      "TheTick",
+      "Godzilla",
+      "RockosModernLife",
+      "TMNTNextMutation",
+      "MotorcityTVseries",
+      "KarateKid",
+      "StarcomtheUSSpaceForceSeries"
+    ]
+  },
+  {
+    "number": 46,
+    "name": "THE AGENCY",
+    "kind": "curated",
+    "tagline": "Trust no one. Except the schedule.",
+    "daypart": [],
+    "fallbackPool": [
+      "GetSmart",
+      "Persuaders",
+      "TekWar",
+      "MaxHeadroom"
+    ]
+  },
+  {
+    "number": 47,
+    "name": "LATE NIGHT CARTOONS",
+    "kind": "curated",
+    "tagline": "Not for the kids' table.",
+    "daypart": [],
+    "fallbackPool": [
+      "BeavisButthead",
+      "BigMouth",
+      "Duckman",
+      "Daria",
+      "Boondocks",
+      "BobandMargaret",
+      "RenAndStimpy",
+      "MoralOrel",
+      "PJs",
+      "DrawnTogether",
+      "BrakShowSeries",
+      "Simpsons",
+      "Oblongs",
+      "SpawntheAnimatedSeriesSeries480x480",
+      "Undergrads",
+      "HomeMovies",
+      "AeonFlux",
+      "CommonSideEffects"
+    ]
+  },
+  {
+    "number": 48,
+    "name": "ANIME MIDNIGHT",
+    "kind": "curated",
+    "tagline": "Subtitles after dark.",
+    "daypart": [],
+    "fallbackPool": [
+      "DragonBallZ",
+      "Digimon",
+      "LodossWarSeriesEnglishDub",
+      "NeonGenesisEvangelion",
+      "AttackonTitan",
+      "MobileSuitGundam0083",
+      "BubblegumCrisistheSeriesDualAudioHD"
+    ]
+  },
+  {
+    "number": 49,
+    "name": "BLACK & WHITE HOUR",
+    "kind": "curated",
+    "tagline": "Before color, and none the worse.",
+    "daypart": [],
+    "fallbackPool": [
+      "LeaveIttoBeavertheSeries",
+      "DickVanDyke",
+      "TheLucyShow",
+      "MisterEd",
+      "McHalesNavySeries"
+    ]
+  },
+  {
+    "number": 50,
+    "name": "FAMILY HOUR",
+    "kind": "curated",
+    "tagline": "A lesson learned before the credits.",
+    "daypart": [],
+    "fallbackPool": [
+      "CosbyShow",
+      "FactsofLife",
+      "MamasFamily",
+      "TheHoganFamily",
+      "HighwayToHeaven",
+      "ALFtheSeries",
+      "ArchieBunkersPlace",
+      "LifeGoesOn",
+      "HarryandtheHendersons",
+      "BlessThisHouse",
+      "JusttheTenofUs",
+      "BosomBuddies",
+      "ItsYourMove"
+    ]
+  },
+  {
+    "number": 51,
+    "name": "APARTMENT 5B",
+    "kind": "curated",
+    "tagline": "Nobody here has a real job.",
+    "daypart": [],
+    "fallbackPool": [
+      "Nanny",
+      "Reba",
+      "UnhappilyEverAfter",
+      "AreWeThereYet",
+      "StillStanding",
+      "WhatILikeAboutYou",
+      "VeronicasCloset",
+      "DharmaAndGreg",
+      "RudeAwakening",
+      "NedAndStacey",
+      "Joey",
+      "SoulMan",
+      "BernieMacShow"
+    ]
+  },
+  {
+    "number": 52,
+    "name": "STORYTIME",
+    "kind": "curated",
+    "tagline": "Read along if you like.",
+    "daypart": [],
+    "fallbackPool": [
+      "AdventuresinWonderland",
+      "BerenstainBears",
+      "Ghostwriter",
+      "NickArcade",
+      "LittleBear",
+      "CliffordtheBigRedDogSeriesSeries",
+      "Zoboomafoo",
+      "RoundtheTwist",
+      "BertandErniesGreatAdventures",
+      "Wishbone",
+      "MouseFactory",
+      "MrMen",
+      "LandOfTheLost1991",
+      "TheWorldofDavidtheGnome",
+      "JimHensonHour",
+      "WonderPetsEpisodeswithMissingEpisodes"
+    ]
+  },
+  {
+    "number": 53,
+    "name": "SKETCH VAULT",
+    "kind": "curated",
+    "tagline": "Bits, and nothing but.",
+    "daypart": [],
+    "fallbackPool": [
+      "WhoseLineIsItAnyway",
+      "InLivingColor",
+      "MontyPythonsFlyingCircus",
+      "ABCsFridays",
+      "BenStillerShow",
+      "HeyVernIt"
+    ]
+  },
+  {
+    "number": 54,
+    "name": "CULT & CANCELLED",
+    "kind": "curated",
+    "tagline": "Thirteen episodes, no more.",
+    "daypart": [],
+    "fallbackPool": [
+      "Jericho",
+      "Animorphs",
+      "TheNetAmericanTVseries",
+      "MortalKombatConquest",
+      "BakersfieldPD",
+      "TeenAngel",
+      "WeberShow",
+      "LoneGunmen",
+      "Ted",
+      "FireflySeries",
+      "CavemenSeriesSlightlyBetterQuality",
+      "Action",
+      "Tucker",
+      "YouWish",
+      "Mulaney",
+      "LifeAsWeKnowIt",
+      "Middleman",
+      "Woops"
+    ]
+  },
+  {
+    "number": 55,
+    "name": "CREATURE DOUBLE FEATURE",
+    "kind": "curated",
+    "tagline": "Monsters, madmen, and made-for-TV mayhem.",
+    "daypart": [],
+    "fallbackPool": [
+      "MonsterVision",
+      "TheShining1997",
+      "Tommyknockers",
+      "TheExorcist",
+      "TheTexasChainsawMassacre2",
+      "AmericanWerewolfInLondon",
+      "Trucks",
+      "CurseOfTheBlairWitch",
+      "TheDeadZone",
+      "SingleWhiteFemale",
+      "ShallowGrave",
+      "TheBeast",
+      "It1990",
+      "StormOfTheCentury",
+      "TheStand1994",
+      "SometimesTheyComeBack",
+      "Langoliers"
+    ]
+  },
+  {
+    "number": 56,
+    "name": "60s & 70s SITCOM HOUR",
+    "kind": "curated",
+    "tagline": "Before the laugh track needed subtitles.",
+    "daypart": [],
+    "fallbackPool": [
+      "MASH",
+      "Jeffersons",
+      "PetticoatJunction",
+      "GreenAcres",
+      "MaryTylerMooreShow",
+      "DickVanDyke",
+      "TheLucyShow",
+      "HeresLucy",
+      "MisterEd",
+      "GetSmart",
+      "Taxi1978",
+      "McHalesNavySeries",
+      "WkrpinCincinnati",
+      "AllInTheFamily",
+      "TheMonkees"
+    ]
+  },
+  {
+    "number": 57,
+    "name": "80s SITCOMS",
+    "kind": "curated",
+    "tagline": "Shoulder pads and setups.",
+    "daypart": [],
+    "fallbackPool": [
+      "MurphyBrown",
+      "CosbyShow",
+      "FactsofLife",
+      "Newhart",
+      "NightCourt",
+      "GrowingPains",
+      "MamasFamily",
+      "TheHoganFamily",
+      "ALFtheSeries",
+      "ArchieBunkersPlace",
+      "PunkyBrewster",
+      "JusttheTenofUs",
+      "BosomBuddies",
+      "MarriedWithChildren",
+      "ItsYourMove"
+    ]
+  },
+  {
+    "number": 58,
+    "name": "90s SITCOMS",
+    "kind": "curated",
+    "tagline": "Must-see, whenever you tune in.",
+    "daypart": [],
+    "fallbackPool": [
+      "DrewCareyShow",
+      "FamilyMatters",
+      "EverybodyLovesRaymond",
+      "KingofQueens",
+      "SavedByTheBell",
+      "HomeImprovement",
+      "Coach",
+      "MadAboutYou",
+      "Nanny",
+      "UnhappilyEverAfter",
+      "NewsRadio",
+      "CarolineInTheCity",
+      "LifeGoesOn",
+      "AlexMack",
+      "ParkerLewis",
+      "VeronicasCloset",
+      "HeyDude",
+      "DharmaAndGreg",
+      "RudeAwakening",
+      "NedAndStacey",
+      "Popular",
+      "JeffFoxworthyShow",
+      "Wings",
+      "SaluteYourShorts",
+      "ZoeDuncanJackJane",
+      "SoulMan",
+      "ShastaMcNasty",
+      "TeenAngel",
+      "BakersfieldPD",
+      "YouWish",
+      "Action",
+      "StepByStep",
+      "CaliforniaDreams"
+    ]
+  },
+  {
+    "number": 59,
+    "name": "2000s SITCOMS",
+    "kind": "curated",
+    "tagline": "The last sitcoms before the mockumentary took over.",
+    "daypart": [],
+    "fallbackPool": [
+      "MalcolmInTheMiddle",
+      "Reba",
+      "StillStanding",
+      "WhatILikeAboutYou",
+      "Joey",
+      "BernieMacShow",
+      "WeberShow",
+      "BacktoYou",
+      "CavemenSeriesSlightlyBetterQuality",
+      "Tucker",
+      "That70sShow",
+      "WillAndGrace"
+    ]
+  },
+  {
+    "number": 60,
+    "name": "SLAPSTICK & SCREWBALL",
+    "kind": "curated",
+    "tagline": "Nobody here keeps a straight face.",
+    "daypart": [],
+    "fallbackPool": [
+      "PetticoatJunction",
+      "GreenAcres",
+      "MisterEd",
+      "GetSmart",
+      "McHalesNavySeries",
+      "ShastaMcNasty",
+      "MarriedWithChildren",
+      "TeenAngel",
+      "CavemenSeriesSlightlyBetterQuality",
+      "Woops"
+    ]
+  },
+  {
+    "number": 61,
+    "name": "VBO",
+    "kind": "genre",
+    "genre": [
+      "Action & Adventure",
+      "Comedy",
+      "Drama",
+      "Family & Kids",
+      "Holiday",
+      "Horror",
+      "Sci-Fi & Fantasy"
+    ],
+    "tagline": "It's not TV."
+  },
+  {
+    "number": 62,
+    "name": "VBO 2",
+    "kind": "genre",
+    "genre": [
+      "Action & Adventure",
+      "Comedy",
+      "Drama",
+      "Family & Kids",
+      "Holiday",
+      "Horror",
+      "Sci-Fi & Fantasy"
+    ],
+    "seed": "vbo2",
+    "tagline": "The other half of the lineup."
+  },
+  {
+    "number": 63,
+    "name": "VBO FAMILY",
+    "kind": "genre",
+    "genre": [
+      "Family & Kids",
+      "Holiday"
+    ],
+    "tagline": "Everybody in the room."
+  },
+  {
+    "number": 64,
+    "name": "VBO DRAMA",
+    "kind": "genre",
+    "genre": "Drama",
+    "tagline": "Nobody says a word for two hours."
+  },
+  {
+    "number": 65,
+    "name": "VBO COMEDY",
+    "kind": "genre",
+    "genre": "Comedy",
+    "tagline": "Uncut, unedited, unaired-on-basic."
+  },
+  {
+    "number": 66,
+    "name": "VBO ACTION",
+    "kind": "genre",
+    "genre": [
+      "Action & Adventure",
+      "Sci-Fi & Fantasy"
+    ],
+    "tagline": "Explosions on a schedule."
+  },
+  {
+    "number": 67,
+    "name": "VBO HORROR",
+    "kind": "genre",
+    "genre": "Horror",
+    "tagline": "Late enough that it counts."
+  }
+]
