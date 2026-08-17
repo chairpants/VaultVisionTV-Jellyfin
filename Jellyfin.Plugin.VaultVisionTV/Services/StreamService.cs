@@ -47,18 +47,27 @@ public class StreamService
         var channel = _catalog.Channels.FirstOrDefault(c => c.Number == channelNumber);
         if (channel is null)
         {
+            _logger.LogWarning("VaultVisionTV: stream request for unknown channel {Channel}", channelNumber);
             return StreamResult.ChannelNotFound;
         }
 
         var catalog = _catalog.Current;
         if (catalog is null)
         {
+            _logger.LogWarning("VaultVisionTV: stream request for channel {Channel} but no catalog is loaded yet", channelNumber);
             return StreamResult.NoSignal;
         }
 
         var position = _scheduler.GetPositionAt(channel, catalog, DateTime.Now);
-        if (position is null || _scheduler.IsBroken(position.Episode.Key))
+        if (position is null)
         {
+            _logger.LogWarning("VaultVisionTV: channel {Channel} has no scheduled position right now (empty pool?)", channelNumber);
+            return StreamResult.NoSignal;
+        }
+
+        if (_scheduler.IsBroken(position.Episode.Key))
+        {
+            _logger.LogWarning("VaultVisionTV: channel {Channel} landed on episode {Key} which is marked broken", channelNumber, position.Episode.Key);
             return StreamResult.NoSignal;
         }
 
@@ -66,12 +75,19 @@ public class StreamService
         // already in a slot's dead-air tail, there's nothing to stream.
         if (position.Padding)
         {
+            _logger.LogInformation("VaultVisionTV: channel {Channel} is in a commercial-break gap right now (not handled until Phase 2)", channelNumber);
             return StreamResult.InBreak;
         }
 
         var url = await _resolver.ResolveEpisodeUrlAsync(position.Episode.ItemId, position.Episode.FileHint, cancellationToken).ConfigureAwait(false);
         if (url is null)
         {
+            _logger.LogWarning(
+                "VaultVisionTV: could not resolve a playable archive.org URL for channel {Channel}, episode {Key} (itemId={ItemId}, fileHint={FileHint}) — marking broken",
+                channelNumber,
+                position.Episode.Key,
+                position.Episode.ItemId,
+                position.Episode.FileHint);
             _scheduler.MarkBroken(position.Episode.Key);
             return StreamResult.ResolveFailed;
         }

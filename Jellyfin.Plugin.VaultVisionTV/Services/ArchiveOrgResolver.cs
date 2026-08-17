@@ -79,6 +79,15 @@ public partial class ArchiveOrgResolver
 
         if (file?.Name is null)
         {
+            if (meta is null)
+            {
+                _logger.LogWarning("VaultVisionTV: archive.org metadata fetch failed for item {ItemId} (see the fetch warning above for the cause)", itemId);
+            }
+            else
+            {
+                _logger.LogWarning("VaultVisionTV: item {ItemId} has {FileCount} files but none matched fileHint {FileHint}", itemId, files.Count, fileHint);
+            }
+
             return null;
         }
 
