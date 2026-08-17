@@ -8,11 +8,10 @@ the same way for every viewer at once. Works on every Jellyfin client (web,
 Android TV, tvOS, Roku, Samsung/LG apps), because it plugs into Jellyfin's
 Live TV data model rather than shipping its own UI.
 
-See `/Users/mikeski/.claude/plans/wondrous-gliding-seahorse.md` for the full
-design writeup. Short version: this is a real installed C# plugin, but it
-integrates with Live TV the way an M3U tuner does — it self-hosts an M3U
-playlist, an XMLTV guide, and live MPEG-TS stream endpoints, and you point
-Jellyfin's built-in "M3U Tuner" Live TV source at those URLs.
+This is a real installed C# plugin, but it integrates with Live TV the way an
+M3U tuner does — it self-hosts an M3U playlist, an XMLTV guide, and live
+MPEG-TS stream endpoints, and you point Jellyfin's built-in "M3U Tuner" Live
+TV source at those URLs.
 
 ## Status: Phase 1
 
@@ -38,7 +37,22 @@ dotnet build Jellyfin.Plugin.VaultVisionTV/Jellyfin.Plugin.VaultVisionTV.csproj 
 
 Output DLL: `Jellyfin.Plugin.VaultVisionTV/bin/Release/net9.0/Jellyfin.Plugin.VaultVisionTV.dll`
 
-## Installing on a Docker Jellyfin server (NAS)
+## Installing
+
+### Option A — plugin repository (recommended, no NAS filesystem access needed)
+
+1. Dashboard → Plugins → **Repositories** → Add:
+   `https://raw.githubusercontent.com/chairpants/VaultVisionTV-Jellyfin/main/manifest.json`
+2. Dashboard → Plugins → **Catalog** → find **VaultVisionTV** (category "Live
+   TV") → Install.
+3. Restart the Jellyfin server (Dashboard prompts for this).
+4. Dashboard → Plugins should show **VaultVisionTV** as active.
+
+Each new release gets a new entry appended to `manifest.json`'s `versions`
+array — Jellyfin's catalog then offers it as an update, same as any other
+plugin.
+
+### Option B — manual copy
 
 Jellyfin loads plugins from a folder inside its config volume, one
 subdirectory per plugin:
@@ -47,14 +61,13 @@ subdirectory per plugin:
 <jellyfin config volume>/plugins/VaultVisionTV_0.1.0.0/Jellyfin.Plugin.VaultVisionTV.dll
 ```
 
-1. Build in Release mode (above).
-2. Copy the built `.dll` into that folder on the NAS (over SSH/rsync/your
-   NAS's file manager — wherever the container's `/config` volume is mounted
-   on the host).
-3. Restart the Jellyfin container.
-4. Dashboard → Plugins should show **VaultVisionTV**. Check `docker logs` for
-   the container if it doesn't — a load error there usually means an ABI/SDK
-   mismatch.
+Build in Release mode (above), copy the `.dll` into that folder (over
+SSH/rsync/your NAS's file manager), restart the container.
+
+### Either way
+
+Check `docker logs` for the container if the plugin doesn't show up in
+Dashboard → Plugins — a load error there usually means an ABI/SDK mismatch.
 
 ## Wiring up Live TV
 
@@ -67,6 +80,31 @@ exact URLs for your server. In short, under Dashboard → Live TV:
 Channels should appear with a live guide grid. Tuning one should join
 whatever's currently scheduled, mid-program.
 
+## Releasing a new version
+
+`jprm` (Jellyfin Plugin Repository Manager) is the standard tool for this but
+was unreliable in testing (silently no-op'd rather than erroring). Until
+that's sorted out, cut a release by hand:
+
+```bash
+VERSION=0.1.0.0   # bump this — also update it in build.yaml
+
+dotnet publish Jellyfin.Plugin.VaultVisionTV/Jellyfin.Plugin.VaultVisionTV.csproj \
+  -c Release -f net9.0 -o /tmp/vvtv-publish
+
+cd /tmp
+zip -j vvtv-plugin.zip vvtv-publish/Jellyfin.Plugin.VaultVisionTV.dll vvtv-publish/Jellyfin.Plugin.VaultVisionTV.pdb
+CHECKSUM=$(md5 -q vvtv-plugin.zip | tr 'a-f' 'A-F')   # Jellyfin expects hex MD5 of the zip
+
+gh release create v$VERSION vvtv-plugin.zip --title "v$VERSION" --notes "..."
+```
+
+Then append a new entry to `manifest.json`'s `versions` array (highest
+version first) with the new `version`, `sourceUrl` (the release asset URL
+`gh release create` prints), `checksum` ($CHECKSUM above), and a fresh
+`timestamp`, and push. Jellyfin's plugin catalog picks up the new version on
+its next repository check.
+
 ## Layout
 
 | Path | Role |
@@ -75,7 +113,7 @@ whatever's currently scheduled, mid-program.
 | `PluginServiceRegistrator.cs` | DI wiring |
 | `Configuration/` | `PluginConfiguration.cs` + `configPage.html` (Dashboard settings page) |
 | `Domain/` | Data models — `Channel`/`DaypartWindow` (from `channels.js`), `CatalogData`/`Show`/`Episode` (matches VaultVisionTV's `catalog.json` shape), `SchedulePosition` |
-| `Data/channels.json` | The channel lineup, generated from VaultVisionTV's `channels.js` (guide/vod-kind channels excluded — see the design doc) |
+| `Data/channels.json` | The channel lineup, generated from VaultVisionTV's `channels.js` (its "guide" and "vod" kind entries are excluded — Jellyfin renders its own guide grid, and VOD browsing is out of scope for this phase) |
 | `Services/SchedulerService.cs` | Port of `scheduler.js` — deterministic scheduling math |
 | `Services/CatalogService.cs` | Fetches/caches the published `catalog.json` |
 | `Services/ArchiveOrgResolver.cs` | Port of `player.js`'s `resolveEpisodeUrl` |
